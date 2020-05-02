@@ -1,0 +1,27 @@
+<app-divider>
+    Models Component
+</app-divider>
+
+<button (click)="onClick()" class="ui button">Show Modal</button>
+
+<app-modal (click)="onClick()" *ngIf="modalOpen">
+    <ng-container modalTitle>
+        Profile Picture
+    </ng-container>
+    <ng-container>
+        <div class="ui medium image">
+            <img src="./assets/images/modal_avater.png">
+        </div>
+        <div class="description">
+            <div class="ui header">We've auto-chosen a profile image for you.</div>
+            <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
+                    target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+        </div>
+    </ng-container>
+    <ng-container modalFooter>
+        <div (click)="onClick()" class="ui black deny button">
+            Click Me
+        </div>
+    </ng-container>
+</app-modal>
