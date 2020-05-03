@@ -1,11 +1,12 @@
-.actions:empty {
+div >.actions:empty {
     display: none;
-}
-
-.actions-default {
+  }
+  
+  div > .actions-default {
     display: none;
-}
-
-.actions:empty + .actions-default {
+  }
+  
+  div > .actions:empty + .actions-default {
     display: block;
-}
+  }
+  
